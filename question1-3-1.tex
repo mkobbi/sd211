@@ -1,0 +1,36 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+Pour $Q\in\mathcal{M_{\left|\mathrm{U}\right|\times\left|\mathrm{C}\right|}},$$P\in\mathcal{M_{\left|\mathrm{C}\right|\times\left|\mathrm{I}\right|}}$,
+on a :
+
+\[
+\begin{array}{ccc}
+f:(P,Q) & \mapsto & \frac{1}{2}{\displaystyle \sum_{(u,i)\in K}\left(r_{ui}-{\displaystyle \sum_{c\in C}q_{uc}p_{ci}}\right)^{2}+\frac{\rho}{2}\left(\sum_{u\in U,c\in C}q_{uc}^{2}+\sum_{c\in C,i\in I}p_{ci}^{2}\right)}\\
+ & = & \frac{1}{2}{\displaystyle \sum_{(u,i)\in K}\sum_{c\in C}\left(\frac{r_{ui}}{\left|\mathrm{C}\right|}-{\displaystyle q_{uc}p_{ci}}\right)^{2}+\frac{\rho}{2}\left(\sum_{u\in U,c\in C}q_{uc}^{2}+\sum_{c\in C,i\in I}p_{ci}^{2}\right)}\\
+ & = & \frac{1}{2}{\displaystyle \sum_{(u,i)\in K}\sum_{c\in C}\left(\frac{r_{ui}}{\left|\mathrm{C}\right|}^{2}-{\displaystyle 2\frac{r_{ui}}{\left|\mathrm{C}\right|}q_{uc}p_{ci}+\left(q_{uc}p_{ci}\right)^{2}}\right)+\frac{\rho}{2}\left(\sum_{u\in U,c\in C}q_{uc}^{2}+\sum_{c\in C,i\in I}p_{ci}^{2}\right)}\\
+ & = & {\displaystyle \sum_{u\in U}\sum_{i\in I}\sum_{c\in C}\left(\frac{r_{ui}}{2\left|\mathrm{C}\right|}^{2}-{\displaystyle \frac{r_{ui}}{\left|\mathrm{C}\right|}q_{uc}p_{ci}}+\frac{\rho}{2}q_{uc}^{2}+\frac{\rho}{2}p_{ci}^{2}\right)}+{\displaystyle \sum_{u\in U}}{\displaystyle \sum_{i\in I}}{\displaystyle \sum_{c\in C}}\frac{1}{2}\left(q_{uc}p_{ci}\right)^{2}\\
+ & = & {\displaystyle \sum_{u\in U}\sum_{i\in I}\sum_{c\in C}}\left(g\left(q_{uc},p_{ci}\right)+\frac{1}{2}h\left(q_{uc},p_{ci}\right)\right)
+\end{array}
+\]
+
+
+où $g$ est une forme quadratique sur $\mathbb{R}^{2}$et $h:(x,y)\mapsto(xy)^{2}$
+
+Pour $\overrightarrow{u}=(1,0),\overrightarrow{v}=(0,1),t=\frac{1}{2}$,
+on a :
+
+\[
+h\left(t\overrightarrow{u}+\left(1-t\right)\overrightarrow{v}\right)>th\left(\overrightarrow{u}\right)+\left(1-t\right)h\left(\overrightarrow{v}\right)
+\]
+
+
+$h$ est donc non convexe.
+
+Par suite, $f$ est non convexe.
+\end{document}

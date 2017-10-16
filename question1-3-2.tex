@@ -1,0 +1,63 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\begin{document}
+Pour $Q\in\mathcal{M_{\left|\mathrm{U}\right|\times\left|\mathrm{C}\right|}},$$P\in\mathcal{M_{\left|\mathrm{C}\right|\times\left|\mathrm{I}\right|}}$,
+on a :
+\[
+\overrightarrow{grad}f\left(P,Q\right)=\left(\begin{array}{c}
+\frac{\partial f(P,Q)}{\partial P}\\
+\frac{\partial f(P,Q)}{\partial Q}
+\end{array}\right)
+\]
+
+
+et
+
+\[
+f\left(P,Q\right)=\frac{1}{2}\left\Vert 1_{K}\circ\left(R-QP\right)\right\Vert _{F}^{2}+\frac{\rho}{2}\left(\left\Vert Q\right\Vert _{F}^{2}+\left\Vert P\right\Vert _{F}^{2}\right)
+\]
+
+
+On pose
+
+\[
+\delta:(P,Q)\mapsto\left\Vert 1_{K}\circ\left(R-QP\right)\right\Vert _{F}^{2}
+\]
+
+
+et 
+\[
+M=1_{K}\circ\left(R-QP\right)
+\]
+
+
+On obtient :
+
+\[
+\begin{array}{ccc}
+\partial M & = & \partial\left(1_{K}\circ\left(R-QP\right)\right)\\
+ & = & \left(\partial1_{K}\right)\circ\left(R-QP\right)+1_{K}\circ\partial\left(R-QP\right)\\
+ & = & 1_{K}\circ\left(\partial R-\partial\left(QP\right)\right)\\
+ & = & -1_{K}\circ\left(\left(\partial Q\right)P+Q\left(\partial P\right)\right)
+\end{array}
+\]
+
+
+D'où 
+
+\[
+\begin{array}{ccc}
+\frac{\partial f(P,Q)}{\partial P} & = & 2\left\langle M,\frac{\partial M}{\partial P}\right\rangle +\rho P\\
+ & = & -1_{K}\circ Q^{t}\times1_{K}\circ\left(R-QP\right)+\rho P\\
+\frac{\partial f(P,Q)}{\partial Q} & = & -1_{K}\circ\left(R-QP\right)\times1_{K}\circ P^{t}+\rho Q
+\end{array}
+\]
+
+
+Les différentielles du gradient ne sont pas bornées. Donc il n'est
+pas Lipschitzien.
+\end{document}
